@@ -1,4 +1,19 @@
-package PACKAGE_NAME;
+import java.util.Scanner;
 
 public class KilometersToMiles {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input distance in kilometers
+        System.out.print("Enter distance in kilometers: ");
+        double kilometers = scanner.nextDouble();
+
+        // Convert to miles
+        double miles = kilometers * 0.621371;
+
+        // Output the result
+        System.out.println(kilometers + " kilometers is equal to " + miles + " miles.");
+
+        scanner.close();
+    }
 }
